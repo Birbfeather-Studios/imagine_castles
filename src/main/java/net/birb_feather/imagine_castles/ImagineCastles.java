@@ -4,15 +4,19 @@ import net.distantdig.ezLib.EzLib;
 import net.distantdig.ezLib.block.EzBlockSets;
 import net.distantdig.ezLib.block.EzBlocksBuilder;
 import net.distantdig.ezLib.item.EzItemGroups;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.PressurePlateBlock;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.levelgen.VerticalAnchor;
+import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class ImagineCastles extends EzLib {
 
 	public static String MOD_ID = "imagine_castles";
+
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	public ImagineCastles() {
@@ -26,9 +30,16 @@ public class ImagineCastles extends EzLib {
 
 	@Override
 	public void registerModBlocks() {
-		registerCastleStone("limestone");
+		registerCastleStone("claystone")
+				.makeOre(EzBlocksBuilder.stoneReplacables, 64, 1,
+						HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(80)));
+		registerCastleStone("limestone")
+				.makeOre(EzBlocksBuilder.deepslateReplacables, 64, 1,
+						HeightRangePlacement.uniform(VerticalAnchor.absolute(-80), VerticalAnchor.absolute(80)));
+		registerCastleStone("black_slate")
+				.makeOre(EzBlocksBuilder.deepslateReplacables, 64, 1,
+						HeightRangePlacement.uniform(VerticalAnchor.absolute(-80), VerticalAnchor.absolute(80)));
 		registerCastleStone("white_slate");
-		registerCastleStone("black_slate");
 		registerCastleStone("orange_slate");
 		registerCastleStone("yellow_slate");
 		registerCastleStone("red_slate");
@@ -43,15 +54,14 @@ public class ImagineCastles extends EzLib {
 		registerCastleStone("brown_slate");
 		registerCastleStone("green_slate");
 		registerCastleStone("pink_slate");
-		registerCastleStone("claystone");
 		registerCastleStone("antrecite");
 		registerCastleStone("shale");
 		registerCastleStone("chalk");
 		registerCastleStone("talk");
 	}
 
-	public void registerCastleStone(String name) {
-		new EzBlocksBuilder(name, Blocks.STONE, null, EzBlocksBuilder.EzMaterial.stone)
+	public EzBlocksBuilder registerCastleStone(String name) {
+		EzBlocksBuilder blocksBuilder = new EzBlocksBuilder(name, Blocks.STONE, "", EzBlocksBuilder.EzMaterial.stone)
 				.pickaxe()
 				.stair()
 				.slab()
@@ -65,5 +75,10 @@ public class ImagineCastles extends EzLib {
 				.wall();
 		new EzBlockSets().simpleStoneSet(name + "_bricks");
 		new EzBlockSets().simpleStoneSet("polished_" + name);
+		return blocksBuilder;
+	}
+
+	public static Block getBlock(String name) {
+		return EzBlocksBuilder.inventoryMap.get(name).getBlock();
 	}
 }
