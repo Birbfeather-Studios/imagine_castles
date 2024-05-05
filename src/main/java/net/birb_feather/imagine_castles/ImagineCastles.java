@@ -25,7 +25,7 @@ public class ImagineCastles extends EzLib {
 
 	@Override
 	public void registerModGroup() {
-		EzItemGroups.registerItemGroup(EzBlocksBuilder.inventoryMap.get("black_slate"));
+		EzItemGroups.registerItemGroup(EzBlocksBuilder.itemMap.get("black_slate"));
 	}
 
 	@Override
@@ -70,8 +70,8 @@ public class ImagineCastles extends EzLib {
 				.pressurePlate(BlockSetType.STONE, PressurePlateBlock.Sensitivity.EVERYTHING)
 				.pillar("gothic_", "_pillar", null)
 				.pillar("ornate_", "_pillar", null)
-				.extraBlock("chiseled_", null, null)
-				.extraBlock("cut_", null, null)
+				.extraBlock("chiseled_", "", null)
+				.extraBlock("cut_", "", null)
 				.wall();
 		new EzBlockSets().simpleStoneSet(name + "_bricks");
 		new EzBlockSets().simpleStoneSet("polished_" + name);
@@ -79,6 +79,6 @@ public class ImagineCastles extends EzLib {
 	}
 
 	public static Block getBlock(String name) {
-		return EzBlocksBuilder.inventoryMap.get(name).getBlock();
+		return EzBlocksBuilder.itemMap.get(name).getBlock();
 	}
 }
