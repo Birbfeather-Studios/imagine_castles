@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=north,single=true": {
+      "model": "imagine_castles:block/vertical_limestone_slab_south"
+    },
+    "facing=west,single=true": {
+      "model": "imagine_castles:block/vertical_limestone_slab_east"
+    },
+    "facing=south,single=true": {
+      "model": "imagine_castles:block/vertical_limestone_slab_north"
+    },
+    "facing=east,single=true": {
+      "model": "imagine_castles:block/vertical_limestone_slab_west"
+    },
+    "facing=north,single=false": {
+      "model": "imagine_castles:block/limestone"
+    },
+    "facing=west,single=false": {
+      "model": "imagine_castles:block/limestone"
+    },
+    "facing=east,single=false": {
+      "model": "imagine_castles:block/limestone"
+    },
+    "facing=south,single=false": {
+      "model": "imagine_castles:block/limestone"
+    }
+  }
+}

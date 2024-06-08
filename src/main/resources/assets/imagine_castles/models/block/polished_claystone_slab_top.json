@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "imagine_castles:block/polished_claystone",
+    "side": "imagine_castles:block/polished_claystone",
+    "top": "imagine_castles:block/polished_claystone"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "imagine_castles:light_gray_slate_bricks"
+  },
+  "result": "imagine_castles:light_gray_slate_bricks_stair"
+}

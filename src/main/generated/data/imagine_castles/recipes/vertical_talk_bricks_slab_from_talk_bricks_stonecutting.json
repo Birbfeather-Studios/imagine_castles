@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "imagine_castles:talk_bricks"
+  },
+  "result": "imagine_castles:vertical_talk_bricks_slab"
+}

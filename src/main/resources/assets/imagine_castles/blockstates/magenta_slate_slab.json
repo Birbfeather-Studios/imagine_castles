@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "imagine_castles:block/magenta_slate_slab"
+    },
+    "type=double": {
+      "model": "imagine_castles:block/magenta_slate"
+    },
+    "type=top": {
+      "model": "imagine_castles:block/magenta_slate_slab_top"
+    }
+  }
+}

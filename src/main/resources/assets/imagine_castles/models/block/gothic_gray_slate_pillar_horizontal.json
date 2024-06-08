@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "imagine_castles:block/gothic_gray_slate_pillar_top",
+    "side": "imagine_castles:block/gothic_gray_slate_pillar"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "imagine_castles:block/limestone_bricks_slab"
+    },
+    "type=double": {
+      "model": "imagine_castles:block/limestone_bricks"
+    },
+    "type=top": {
+      "model": "imagine_castles:block/limestone_bricks_slab_top"
+    }
+  }
+}

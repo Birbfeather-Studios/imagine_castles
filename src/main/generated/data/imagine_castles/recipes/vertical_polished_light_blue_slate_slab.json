@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "imagine_castles:polished_light_blue_slate"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "#  ",
+    "#  "
+  ],
+  "result": {
+    "count": 6,
+    "item": "imagine_castles:vertical_polished_light_blue_slate_slab"
+  },
+  "show_notification": true
+}

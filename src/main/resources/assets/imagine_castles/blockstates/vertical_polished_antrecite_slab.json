@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=north,single=true": {
+      "model": "imagine_castles:block/vertical_polished_antrecite_slab_south"
+    },
+    "facing=west,single=true": {
+      "model": "imagine_castles:block/vertical_polished_antrecite_slab_east"
+    },
+    "facing=south,single=true": {
+      "model": "imagine_castles:block/vertical_polished_antrecite_slab_north"
+    },
+    "facing=east,single=true": {
+      "model": "imagine_castles:block/vertical_polished_antrecite_slab_west"
+    },
+    "facing=north,single=false": {
+      "model": "imagine_castles:block/polished_antrecite"
+    },
+    "facing=west,single=false": {
+      "model": "imagine_castles:block/polished_antrecite"
+    },
+    "facing=east,single=false": {
+      "model": "imagine_castles:block/polished_antrecite"
+    },
+    "facing=south,single=false": {
+      "model": "imagine_castles:block/polished_antrecite"
+    }
+  }
+}

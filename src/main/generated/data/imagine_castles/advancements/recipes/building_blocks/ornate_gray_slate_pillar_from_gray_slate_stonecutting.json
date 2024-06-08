@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_gray_slate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "imagine_castles:gray_slate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:ornate_gray_slate_pillar_from_gray_slate_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_gray_slate",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:ornate_gray_slate_pillar_from_gray_slate_stonecutting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

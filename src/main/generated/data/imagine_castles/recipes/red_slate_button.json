@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "imagine_castles:red_slate"
+    }
+  ],
+  "result": {
+    "item": "imagine_castles:red_slate_button"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=north,single=true": {
+      "model": "imagine_castles:block/vertical_green_slate_bricks_slab_south"
+    },
+    "facing=west,single=true": {
+      "model": "imagine_castles:block/vertical_green_slate_bricks_slab_east"
+    },
+    "facing=south,single=true": {
+      "model": "imagine_castles:block/vertical_green_slate_bricks_slab_north"
+    },
+    "facing=east,single=true": {
+      "model": "imagine_castles:block/vertical_green_slate_bricks_slab_west"
+    },
+    "facing=north,single=false": {
+      "model": "imagine_castles:block/green_slate_bricks"
+    },
+    "facing=west,single=false": {
+      "model": "imagine_castles:block/green_slate_bricks"
+    },
+    "facing=east,single=false": {
+      "model": "imagine_castles:block/green_slate_bricks"
+    },
+    "facing=south,single=false": {
+      "model": "imagine_castles:block/green_slate_bricks"
+    }
+  }
+}

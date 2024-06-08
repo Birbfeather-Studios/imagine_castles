@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "imagine_castles:block/claystone_pressure_plate"
+    },
+    "powered=true": {
+      "model": "imagine_castles:block/claystone_pressure_plate_down"
+    }
+  }
+}

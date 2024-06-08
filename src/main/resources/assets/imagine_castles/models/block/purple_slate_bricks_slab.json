@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "imagine_castles:block/purple_slate_bricks",
+    "side": "imagine_castles:block/purple_slate_bricks",
+    "top": "imagine_castles:block/purple_slate_bricks"
+  }
+}

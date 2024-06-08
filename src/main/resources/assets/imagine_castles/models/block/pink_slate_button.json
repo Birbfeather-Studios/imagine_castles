@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/button",
+        "textures": {
+    "texture": "imagine_castles:block/pink_slate"
+    }
+}

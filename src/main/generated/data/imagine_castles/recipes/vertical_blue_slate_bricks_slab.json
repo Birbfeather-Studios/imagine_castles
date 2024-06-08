@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "imagine_castles:blue_slate_bricks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "#  ",
+    "#  "
+  ],
+  "result": {
+    "count": 6,
+    "item": "imagine_castles:vertical_blue_slate_bricks_slab"
+  },
+  "show_notification": true
+}

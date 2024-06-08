@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "imagine_castles:pink_slate"
+  },
+  "result": "imagine_castles:chiseled_pink_slate"
+}

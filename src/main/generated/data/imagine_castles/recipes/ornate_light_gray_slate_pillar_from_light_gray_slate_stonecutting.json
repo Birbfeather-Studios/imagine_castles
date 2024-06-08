@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "imagine_castles:light_gray_slate"
+  },
+  "result": "imagine_castles:ornate_light_gray_slate_pillar"
+}

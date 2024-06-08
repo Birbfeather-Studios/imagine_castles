@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "imagine_castles:block/polished_limestone",
+    "side": "imagine_castles:block/polished_limestone",
+    "top": "imagine_castles:block/polished_limestone"
+  }
+}

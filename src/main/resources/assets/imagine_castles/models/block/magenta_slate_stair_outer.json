@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "imagine_castles:block/magenta_slate",
+    "side": "imagine_castles:block/magenta_slate",
+    "top": "imagine_castles:block/magenta_slate"
+  }
+}
