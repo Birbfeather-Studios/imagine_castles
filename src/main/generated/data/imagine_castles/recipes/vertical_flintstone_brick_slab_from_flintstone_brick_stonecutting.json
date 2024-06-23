@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "imagine_castles:flintstone_brick"
+  },
+  "result": "imagine_castles:vertical_flintstone_brick_slab"
+}

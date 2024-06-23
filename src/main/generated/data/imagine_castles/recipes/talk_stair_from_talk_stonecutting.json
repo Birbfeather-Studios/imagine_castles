@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "imagine_castles:talk"
-  },
-  "result": "imagine_castles:talk_stair"
-}

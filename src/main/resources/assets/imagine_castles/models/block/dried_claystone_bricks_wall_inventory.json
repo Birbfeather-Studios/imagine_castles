@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "imagine_castles:block/dried_claystone_bricks"
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "imagine_castles:polished_light_blue_slate"
-  },
-  "result": "imagine_castles:vertical_polished_light_blue_slate_slab"
-}

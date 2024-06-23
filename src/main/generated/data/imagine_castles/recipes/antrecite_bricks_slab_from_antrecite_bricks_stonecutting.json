@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "imagine_castles:antrecite_bricks"
-  },
-  "result": "imagine_castles:antrecite_bricks_slab"
-}

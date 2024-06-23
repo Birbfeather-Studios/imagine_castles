@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "imagine_castles:block/antrecite",
-    "side": "imagine_castles:block/antrecite",
-    "top": "imagine_castles:block/antrecite"
-  }
-}

@@ -1,26 +1,9 @@
 {
   "replace": false,
   "values": [
-    "imagine_castles:orange_slate_button",
-    "imagine_castles:light_blue_slate_button",
-    "imagine_castles:pink_slate_button",
-    "imagine_castles:white_slate_button",
-    "imagine_castles:blue_slate_button",
-    "imagine_castles:black_slate_button",
-    "imagine_castles:purple_slate_button",
     "imagine_castles:limestone_button",
-    "imagine_castles:antrecite_button",
-    "imagine_castles:talk_button",
-    "imagine_castles:cyan_slate_button",
-    "imagine_castles:magenta_slate_button",
-    "imagine_castles:yellow_slate_button",
-    "imagine_castles:brown_slate_button",
-    "imagine_castles:lime_slate_button",
-    "imagine_castles:gray_slate_button",
-    "imagine_castles:green_slate_button",
+    "imagine_castles:dried_claystone_button",
     "imagine_castles:claystone_button",
-    "imagine_castles:light_gray_slate_button",
-    "imagine_castles:chalk_button",
-    "imagine_castles:red_slate_button"
+    "imagine_castles:flintstone_button"
   ]
 }

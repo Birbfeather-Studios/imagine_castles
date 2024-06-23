@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "imagine_castles:claystone_brick"
+  },
+  "result": "imagine_castles:vertical_claystone_brick_slab"
+}

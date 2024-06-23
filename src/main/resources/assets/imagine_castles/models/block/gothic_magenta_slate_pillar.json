@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "imagine_castles:block/gothic_magenta_slate_pillar_top",
-    "side": "imagine_castles:block/gothic_magenta_slate_pillar"
-  }
-}

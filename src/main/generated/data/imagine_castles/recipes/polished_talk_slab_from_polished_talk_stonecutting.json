@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "imagine_castles:polished_talk"
-  },
-  "result": "imagine_castles:polished_talk_slab"
-}

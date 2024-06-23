@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "imagine_castles:purple_slate"
-  },
-  "result": "imagine_castles:vertical_purple_slate_slab"
-}

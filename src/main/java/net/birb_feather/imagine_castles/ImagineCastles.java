@@ -13,9 +13,13 @@ import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ImagineCastles extends EzLib {
 
     public static String MOD_ID = "imagine_castles";
+    public static List<String> colors = List.of("white", "yellow", "orange", "red", "pink", "purple", "gray", "light_gray", "blue", "light_blue", "green", "lime", "brown", "cyan", "magenta");
 
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
@@ -30,51 +34,27 @@ public class ImagineCastles extends EzLib {
 
     @Override
     public void registerModBlocks() {
-        //stonetypes
+        //generated in world
         registerCastleStone("claystone") //deep brownish stone very like iberian stone looking
+                .makeOre(EzBlocksBuilder.stoneReplacables, 64, 1, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(80)));
+        registerCastleStone("dried_claystone");
+        registerCastleStone("flintstone")
                 .makeOre(EzBlocksBuilder.stoneReplacables, 64, 1, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(80)));
         registerCastleStone("limestone") //very nice and faded out pinkish yellowis brown stone, very french looking
                 .makeOre(EzBlocksBuilder.stoneReplacables, 64, 1, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(80)));
-        registerCastleStone("antrecite") //a gray darkish stone, looks a bit like blackstone but then different. good for evil builds
-                .makeOre(EzBlocksBuilder.stoneReplacables, 64, 1, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(80)));
-        registerCastleStone("chalk") //very very white looking stone, perfect for really whashed out buildings like minas stirith
-                .makeOre(EzBlocksBuilder.stoneReplacables, 64, 1, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(80)));
-        registerCastleStone("talk") //this is essentially like a darker version of the limestone, good for contrasting.
+        registerSlate("black_slate")
                 .makeOre(EzBlocksBuilder.stoneReplacables, 64, 1, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(80)));
 
-        //Slate types
-        registerCastleStone("black_slate")
-                .makeOre(EzBlocksBuilder.stoneReplacables, 64, 1, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(80)));
-        registerCastleStone("white_slate")
-                .makeOre(EzBlocksBuilder.stoneReplacables, 64, 1, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(80)));
-        registerCastleStone("orange_slate")
-                .makeOre(EzBlocksBuilder.stoneReplacables, 64, 1, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(80)));
-        registerCastleStone("yellow_slate")
-                .makeOre(EzBlocksBuilder.stoneReplacables, 64, 1, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(80)));
-        registerCastleStone("red_slate")
-                .makeOre(EzBlocksBuilder.stoneReplacables, 64, 1, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(80)));
-        registerCastleStone("blue_slate")
-                .makeOre(EzBlocksBuilder.stoneReplacables, 64, 1, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(80)));
-        registerCastleStone("light_blue_slate")
-                .makeOre(EzBlocksBuilder.stoneReplacables, 64, 1, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(80)));
-        registerCastleStone("cyan_slate")
-                .makeOre(EzBlocksBuilder.stoneReplacables, 64, 1, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(80)));
-        registerCastleStone("lime_slate")
-                .makeOre(EzBlocksBuilder.stoneReplacables, 64, 1, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(80)));
-        registerCastleStone("gray_slate")
-                .makeOre(EzBlocksBuilder.stoneReplacables, 64, 1, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(80)));
-        registerCastleStone("light_gray_slate")
-                .makeOre(EzBlocksBuilder.stoneReplacables, 64, 1, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(80)));
-        registerCastleStone("purple_slate")
-                .makeOre(EzBlocksBuilder.stoneReplacables, 64, 1, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(80)));
-        registerCastleStone("magenta_slate")
-                .makeOre(EzBlocksBuilder.stoneReplacables, 64, 1, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(80)));
-        registerCastleStone("brown_slate")
-                .makeOre(EzBlocksBuilder.stoneReplacables, 64, 1, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(80)));
-        registerCastleStone("green_slate")
-                .makeOre(EzBlocksBuilder.stoneReplacables, 64, 1, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(80)));
-        registerCastleStone("pink_slate")
-                .makeOre(EzBlocksBuilder.stoneReplacables, 64, 1, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(80)));
+        //Not to be generated in the world
+        //for loops are seperated because I am lazy and want to organize everything separately.
+        for (String color : colors) {
+            registerSlate(color + "_slate");
+        }
+
+        for(String color: colors) {
+            registerStucco(color);
+        }
+        registerStucco("black");
     }
 
     public EzBlocksBuilder registerCastleStone(String name) {
@@ -85,12 +65,25 @@ public class ImagineCastles extends EzLib {
                 .verticalSlab()
                 .button(BlockSetType.STONE, 10, false)
                 .pressurePlate(BlockSetType.STONE, PressurePlateBlock.Sensitivity.EVERYTHING)
-                .pillar( "", "_pillar", null)
+                .pillar("", "_pillar", null)
                 .extraBlock("chiseled_", "", null)
-                .extraBlock("cut_", "", null)
                 .wall();
+        new EzBlockSets().simpleStoneSet(name + "_brick");
         new EzBlockSets().simpleStoneSet(name + "_bricks");
-        new EzBlockSets().simpleStoneSet("polished_" + name);
+        return blocksBuilder;
+    }
+
+    public EzBlocksBuilder registerSlate(String name) {
+        EzBlocksBuilder blocksBuilder = new EzBlocksBuilder(name, Blocks.STONE, "", EzBlocksBuilder.EzMaterial.stone)
+                .pickaxe()
+                .stair()
+                .slab();
+        new EzBlockSets().simpleStoneSet(name + "_bricks");
+        return blocksBuilder;
+    }
+
+    public EzBlocksBuilder registerStucco(String name) {
+        EzBlocksBuilder blocksBuilder = new EzBlocksBuilder(name + "_stucco", Blocks.STONE, "", EzBlocksBuilder.EzMaterial.stone).pickaxe();
         return blocksBuilder;
     }
 

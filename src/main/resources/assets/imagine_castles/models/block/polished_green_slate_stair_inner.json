@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "imagine_castles:block/polished_green_slate",
-    "side": "imagine_castles:block/polished_green_slate",
-    "top": "imagine_castles:block/polished_green_slate"
-  }
-}

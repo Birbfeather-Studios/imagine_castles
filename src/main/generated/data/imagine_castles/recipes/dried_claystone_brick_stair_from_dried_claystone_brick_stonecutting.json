@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "imagine_castles:dried_claystone_brick"
+  },
+  "result": "imagine_castles:dried_claystone_brick_stair"
+}

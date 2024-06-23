@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "imagine_castles:block/polished_chalk",
-    "side": "imagine_castles:block/polished_chalk",
-    "top": "imagine_castles:block/polished_chalk"
-  }
-}

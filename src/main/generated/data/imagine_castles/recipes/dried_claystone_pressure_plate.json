@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "imagine_castles:dried_claystone"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "imagine_castles:dried_claystone_pressure_plate"
+  },
+  "show_notification": true
+}

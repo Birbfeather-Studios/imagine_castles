@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "imagine_castles:block/flintstone",
+    "side": "imagine_castles:block/flintstone",
+    "top": "imagine_castles:block/flintstone"
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "imagine_castles:block/polished_white_slate",
-    "side": "imagine_castles:block/polished_white_slate",
-    "top": "imagine_castles:block/polished_white_slate"
-  }
-}

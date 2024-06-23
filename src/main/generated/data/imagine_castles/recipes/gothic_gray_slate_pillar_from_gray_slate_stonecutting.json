@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "imagine_castles:gray_slate"
-  },
-  "result": "imagine_castles:gothic_gray_slate_pillar"
-}

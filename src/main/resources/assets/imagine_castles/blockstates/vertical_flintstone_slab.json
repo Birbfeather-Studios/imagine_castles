@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=north,single=true": {
+      "model": "imagine_castles:block/vertical_flintstone_slab_south"
+    },
+    "facing=west,single=true": {
+      "model": "imagine_castles:block/vertical_flintstone_slab_east"
+    },
+    "facing=south,single=true": {
+      "model": "imagine_castles:block/vertical_flintstone_slab_north"
+    },
+    "facing=east,single=true": {
+      "model": "imagine_castles:block/vertical_flintstone_slab_west"
+    },
+    "facing=north,single=false": {
+      "model": "imagine_castles:block/flintstone"
+    },
+    "facing=west,single=false": {
+      "model": "imagine_castles:block/flintstone"
+    },
+    "facing=east,single=false": {
+      "model": "imagine_castles:block/flintstone"
+    },
+    "facing=south,single=false": {
+      "model": "imagine_castles:block/flintstone"
+    }
+  }
+}

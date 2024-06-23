@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "imagine_castles:chalk_bricks"
-  },
-  "result": "imagine_castles:vertical_chalk_bricks_slab"
-}

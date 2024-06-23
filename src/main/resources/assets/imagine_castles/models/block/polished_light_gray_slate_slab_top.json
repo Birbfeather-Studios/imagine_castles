@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "imagine_castles:block/polished_light_gray_slate",
-    "side": "imagine_castles:block/polished_light_gray_slate",
-    "top": "imagine_castles:block/polished_light_gray_slate"
-  }
-}

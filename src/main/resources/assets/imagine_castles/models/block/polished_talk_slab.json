@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "imagine_castles:block/polished_talk",
-    "side": "imagine_castles:block/polished_talk",
-    "top": "imagine_castles:block/polished_talk"
-  }
-}

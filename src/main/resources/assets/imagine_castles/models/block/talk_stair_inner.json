@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "imagine_castles:block/talk",
-    "side": "imagine_castles:block/talk",
-    "top": "imagine_castles:block/talk"
-  }
-}

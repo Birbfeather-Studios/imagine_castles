@@ -1,26 +1,9 @@
 {
   "replace": false,
   "values": [
-    "imagine_castles:red_slate_pressure_plate",
-    "imagine_castles:yellow_slate_pressure_plate",
-    "imagine_castles:gray_slate_pressure_plate",
-    "imagine_castles:blue_slate_pressure_plate",
-    "imagine_castles:cyan_slate_pressure_plate",
-    "imagine_castles:light_gray_slate_pressure_plate",
-    "imagine_castles:talk_pressure_plate",
-    "imagine_castles:light_blue_slate_pressure_plate",
-    "imagine_castles:pink_slate_pressure_plate",
-    "imagine_castles:claystone_pressure_plate",
-    "imagine_castles:green_slate_pressure_plate",
-    "imagine_castles:lime_slate_pressure_plate",
     "imagine_castles:limestone_pressure_plate",
-    "imagine_castles:white_slate_pressure_plate",
-    "imagine_castles:black_slate_pressure_plate",
-    "imagine_castles:orange_slate_pressure_plate",
-    "imagine_castles:antrecite_pressure_plate",
-    "imagine_castles:chalk_pressure_plate",
-    "imagine_castles:brown_slate_pressure_plate",
-    "imagine_castles:magenta_slate_pressure_plate",
-    "imagine_castles:purple_slate_pressure_plate"
+    "imagine_castles:claystone_pressure_plate",
+    "imagine_castles:flintstone_pressure_plate",
+    "imagine_castles:dried_claystone_pressure_plate"
   ]
 }
